@@ -178,6 +178,7 @@ function GuardHerContent() {
 export default function GuardHerScene() {
   return (
     <Canvas
+      dpr={[1, 1.5]}
       camera={{ position: [0, 0.5, 4.5], fov: 45 }}
       style={{ width: '100%', height: '100%', borderRadius: '12px' }}
       gl={{ antialias: true, alpha: false }}

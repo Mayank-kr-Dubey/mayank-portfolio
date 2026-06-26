@@ -97,6 +97,7 @@ function SceneContent({ timeProgress }) {
 export default function IntroScene({ timeProgress }) {
   return (
     <Canvas
+      dpr={[1, 1.5]}
       camera={{ position: [0, 1, 6], fov: 50 }}
       shadows
       style={{
