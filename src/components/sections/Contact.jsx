@@ -116,7 +116,11 @@ export default function Contact() {
               whileHover={{ y: -8, rotateX: 5, rotateY: idx === 0 ? 3 : idx === 2 ? -3 : 0 }}
               onClick={method.action}
               onMouseEnter={playHover}
-              style={{ cursor: 'pointer', '--card-color': method.color }}
+              style={{ 
+                cursor: 'pointer', 
+                '--card-color': method.color,
+                zIndex: method.hasDropdown && showPhoneOptions ? 50 : 1 
+              }}
             >
               <div className="contact-icon-wrapper" style={{ background: `${method.color}15`, borderColor: `${method.color}30` }}>
                 <span className="contact-icon">{method.icon}</span>
